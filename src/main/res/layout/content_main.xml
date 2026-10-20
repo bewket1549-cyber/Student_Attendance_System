@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment_content_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
+
+    <LinearLayout
+        android:id="@+id/sas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STUDENT ATTENDANCE SYSTEM"
+            android:textSize="30dp"
+            android:textColor="#aa00aa"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Well come to Home Page"
+            android:textSize="20dp"
+            android:textColor="#00aa00"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/role"
+        android:layout_below="@+id/sas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        >
+
+        <Button
+            android:id="@+id/studRole"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Student Role"
+            android:textStyle="bold"
+            android:background="#7777ff"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/instRole"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Instructor Role"
+            android:textStyle="bold"
+            android:background="#7777ff"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/adminRole"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Admin Role"
+            android:textStyle="bold"
+            android:background="#7777ff"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

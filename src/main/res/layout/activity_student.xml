@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:layout_marginLeft="50dp">
+
+<TextView
+    android:id="@+id/studPage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="25dp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textColor="#00aa00"
+    android:text="Well come to student page"
+    android:layout_marginTop="60dp"
+    />
+
+<TextView
+    android:id="@+id/studUserNameText"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:text="User name"
+    android:layout_below="@id/studPage"
+    android:layout_marginTop="40dp"/>
+
+<EditText
+    android:id="@+id/studUserName"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/studPage"
+    android:layout_toRightOf="@id/studUserNameText"
+    android:layout_marginTop="35dp"
+    />
+
+<TextView
+    android:id="@+id/studPasswordText"
+    android:layout_width="100dp"
+    android:layout_height="50dp"
+    android:text="Password"
+    android:layout_below="@id/studUserNameText"/>
+
+<EditText
+    android:id="@+id/studPassword"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/studUserName"
+    android:layout_toRightOf="@id/studPasswordText"/>
+
+<TextView
+    android:id="@+id/studForgot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Forgot password?"
+    android:textColor="#0022cc"
+    android:layout_marginLeft="180dp"
+    android:layout_below="@id/studPassword"/>
+
+    <Button
+        android:id="@+id/studLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:background="#4444cc"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@id/studForgot"/>
+
+</RelativeLayout>
