@@ -30,7 +30,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter full name"
+        android:hint="Enter your full name"
         android:layout_marginLeft="30dp"
        />
     <TextView
